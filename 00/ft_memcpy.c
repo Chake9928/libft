@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
+/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 07:21:12 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/08 21:07:59 by okamototake      ###   ########.fr       */
+/*   Updated: 2022/07/10 16:57:23 by takokamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char		*d_cpy;
 	const char	*s_cpy;

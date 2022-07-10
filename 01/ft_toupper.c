@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/07 07:21:37 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/10 19:20:10 by takokamo         ###   ########.fr       */
+/*   Created: 2022/07/10 22:48:59 by takokamo          #+#    #+#             */
+/*   Updated: 2022/07/10 22:52:49 by takokamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_toupper(int c)
 {
-	size_t	len;
-
-	len = 0;
-	while (s[len])
-		len++;
-	return (len);
+	if ('a' <= c || c <= 'z')
+		return (c - ('a' - 'z'));
+	return (c);
 }
