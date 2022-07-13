@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
+/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 22:49:38 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/13 14:44:23 by okamototake      ###   ########.fr       */
+/*   Updated: 2022/07/13 15:12:55 by takokamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	n_len;
 
 	if (!(*needle))
-		return (*haystack);
+		return ((char *)haystack);
 	n_len = ft_strlen(needle);
 	while (*haystack && len >= n_len)
 	{
 		if (ft_strncmp(haystack, needle, n_len) == 0)
-			return (*haystack);
+			return ((char *)haystack);
 		haystack++;
 		len--;
 	}
@@ -52,10 +52,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 // 	return (NULL);
 // }
 
-int	main(void)
-{
-	char	haystack[] = "ASDFGHJKLZXCVBNM";
-	char	needle[] = "GHJ";
+// int	main(void)
+// {
+// 	char	haystack[] = "ASDFGHJKLZXCVBNM";
+// 	char	needle[] = "GHJ";
 
-	return (printf("%s", strnstr(haystack, needle, 7)));
-}
+// 	return (printf("%s", strnstr(haystack, needle, 7)));
+// }

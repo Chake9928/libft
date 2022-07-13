@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
+/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/10 17:10:44 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/13 14:44:01 by okamototake      ###   ########.fr       */
+/*   Created: 2022/07/10 22:31:57 by takokamo          #+#    #+#             */
+/*   Updated: 2022/07/13 15:11:50 by takokamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+int	ft_tolower(int c)
 {
-	size_t	i;	
-
-	i = 0;
-	while (src[i] && i < dstsize - 1)
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (ft_strlen(src));
+	if ('A' <= c && c <= 'Z')
+		return (c + ('a' - 'A'));
+	return (c);
 }
