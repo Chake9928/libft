@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 07:21:17 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/10 22:31:29 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/13 14:43:43 by okamototake      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	memmove(void *dst, const void *src, size_t len)
+void	ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t			n;
 	char			*d_cpy;
@@ -32,5 +32,3 @@ void	memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-
