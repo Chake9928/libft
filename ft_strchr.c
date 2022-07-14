@@ -6,7 +6,7 @@
 /*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 22:49:52 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/13 14:58:31 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/14 23:27:39 by takokamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strchr(const char *s, int c)
 	while (i < s_len)
 	{
 		if (*(char *)(s + i) == (char)c)
-			return (&(*(char *)(s + i)));
+			return ((char *)(s + i));
 		i++;
 	}
 	return (NULL);
