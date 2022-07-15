@@ -6,7 +6,7 @@
 /*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 22:03:58 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/13 23:12:13 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/15 23:25:41 by takokamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	s_len = ft_strlen(s);
 	if (s_len < start || len == 0)
-		return (NULL);
+		return (ft_strdup(""));
 	if (s_len < start + len)
 		len = s_len - start;
 	sub = (char *)malloc(sizeof(char) * (len + 1));
@@ -30,3 +30,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(sub, s + start, len + 1);
 	return (sub);
 }
+
+// if (s_len < start || len == 0)
+// 		return (NULL;
