@@ -6,42 +6,38 @@
 /*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 18:34:20 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/13 18:18:11 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:59:11 by takokamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include "libft.h"
-
-static int	ov_num(int sign)
+static int	ft_isspace(int c)
 {
-	if (sign == 1)
-		return ((int)LONG_MAX);
-	else
-		return ((int)LONG_MIN);
+	return (('\t' <= c && c <= '\r') || c == ' ');
 }
 
 int	ft_atoi(const char *str)
 {
-	int			sign;
-	long long	num;
+	int	i;
+	int	judge;
+	int	num;
 
-	while ((9 <= *str && *str <= 13) || *str == 32)
-		str++;
-	sign = 1;
-	if (*str == '+' || *str == '-')
-		if (*str++ == '-')
-			sign = -1;
-	num = 0;
-	while (ft_isdigit(*str))
+	i = 0;
+	while (ft_isspace(str[i]))
+		i++;
+	judge = 1;
+	while (str[i] == '+' || str[i] == '-')
 	{
-		if (num > LONG_MAX / 10)
-			return (ov_num(sign));
-		if (num == LONG_MAX / 10 && LONG_MAX % 10 < (*str - '0'))
-			return (ov_num(sign));
-		num = 10 * num + (*str - '0');
-		str++;
+		if (str[i] == '-')
+			judge *= -1;
+		i++;
 	}
-	return ((int)(num * sign));
+	num = 0;
+	while (ft_isdigit(str[i]))
+	{
+		num = (num * 10) + (str[i] - '0');
+		i++;
+	}
+	return (num * judge);
 }

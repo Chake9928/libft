@@ -6,7 +6,7 @@
 /*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 22:49:52 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/14 23:27:39 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/16 14:46:38 by takokamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strchr(const char *s, int c)
 	size_t	s_len;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	s_len = ft_strlen(s) + 1;
 	i = 0;
 	while (i < s_len)
