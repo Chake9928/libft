@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 22:49:57 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/13 14:55:55 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/17 11:33:56 by okamototake      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

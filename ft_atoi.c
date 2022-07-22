@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 18:34:20 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/16 19:11:22 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/17 22:23:52 by okamototake      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	over_max(int flag)
+static int	over_lmax(int flag)
 {
 	if (flag == 1)
 		return ((int)LONG_MAX);
@@ -27,8 +27,8 @@ static int	ft_isspace(int c)
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	flag;
+	int		i;
+	int		flag;
 	long	num;
 
 	i = 0;
@@ -45,9 +45,9 @@ int	ft_atoi(const char *str)
 	while (ft_isdigit(str[i]))
 	{
 		if (num > LONG_MAX / 10)
-			return (over_max(flag));
+			return (over_lmax(flag));
 		if (num == LONG_MAX / 10 && LONG_MAX % 10 < (str[i] - '0'))
-			return (over_max(flag));
+			return (over_lmax(flag));
 		num = (num * 10) + (str[i] - '0');
 		i++;
 	}

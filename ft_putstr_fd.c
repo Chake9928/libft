@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 14:28:46 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/16 15:26:44 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/22 20:53:07 by okamototake      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

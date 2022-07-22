@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 07:21:12 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/10 16:57:23 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/22 13:05:21 by okamototake      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char		*d_cpy;
 	const char	*s_cpy;
 
+	if (dst == src || n == 0)
+		return (dst);
 	d_cpy = (char *)dst;
 	s_cpy = (const char *)src;
 	while (n--)

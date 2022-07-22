@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:54:04 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/15 19:27:25 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/18 13:10:45 by okamototake      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

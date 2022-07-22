@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 22:48:59 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/13 15:11:56 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/17 11:44:24 by okamototake      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

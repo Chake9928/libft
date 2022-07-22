@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: takokamo <takokamo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: okamototakeshi <okamototakeshi@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 22:03:58 by takokamo          #+#    #+#             */
-/*   Updated: 2022/07/15 23:25:41 by takokamo         ###   ########.fr       */
+/*   Updated: 2022/07/17 21:34:18 by okamototake      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
