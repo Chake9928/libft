@@ -1,2 +1,2 @@
 # libft
-42_cursus
+write以外の関数は使用禁止です。アピャー。
